@@ -33,7 +33,7 @@ export default async function handler(req, res) {
     }
 
     // 2. Limitar a 5 álbuns (cronológicos)
-    const albumsLimited = discographyData.albums.slice(0, 5);
+    const albumsLimited = discographyData.albums;
 
     const albumsWithTracks = [];
 
