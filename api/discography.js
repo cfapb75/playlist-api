@@ -84,6 +84,7 @@ export default async function handler(req, res) {
       // evita duplicatas pelo título
       if (!albumsMap.has(item.title)) {
         albumsMap.set(item.title, {
+          id: item.id,
           title: item.title,
           year: item.year
         });
